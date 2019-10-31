@@ -1,0 +1,75 @@
+.carpool {
+  margin: 0 2em;
+  a {
+    text-emphasis: none;
+    text-decoration: none;
+  }
+  &__each {
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 17em;
+    width: 100%;
+    position: relative;
+  }
+
+  &__route {
+    font-size: 0.5em;
+    font-weight: 1000;
+    border: 1px solid white;
+    padding: 0.25em;
+    text-align: center;
+    width: 5.5em;
+    margin: 0;
+  }
+
+  &__city {
+    font-size: 1.5em;
+    margin: 0.15em 0;
+  }
+
+  &__passenger {
+    margin: 0;
+    font-size: 0.75em;
+    font-style: italic;
+    margin-bottom: 8em;
+  }
+
+  &__owed {
+    margin: 0;
+    font-size: 0.75em;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  &__info {
+    width: 10em;
+    border-radius: 2em;
+
+    background-color: $green;
+    height: 17em;
+    padding: 1.25em;
+    color: white;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+  }
+
+  &__map {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    right: 0;
+
+    &--content {
+      border-radius: 1em;
+      width: 100%;
+
+      height: 17em;
+    }
+  }
+}

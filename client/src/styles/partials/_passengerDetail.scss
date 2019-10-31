@@ -1,0 +1,107 @@
+.passengerDetail {
+  margin: 2em;
+}
+
+.detail {
+  height: 15em;
+  background-color: $green;
+  border-radius: 1em;
+  color: white;
+  border-radius: 1.5em;
+
+  &__photo {
+    height: 15em;
+    position: absolute;
+    width: 10em;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1.5em;
+    display: flex;
+    align-items: flex-end;
+    padding: 1em;
+  }
+
+  &__name {
+    margin: 0;
+    text-shadow: 2px 2px 16px rgba(0, 0, 0, 0.75);
+  }
+
+  &__main {
+    margin-left: 11em;
+    padding: 0.75em 0;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+  }
+
+  &__subhead {
+    font-size: 1.2em;
+
+    margin: 0;
+  }
+
+  &__quant {
+    margin: 0.5em 0;
+    font-size: 1.2em;
+
+    &--border {
+      border: 4px solid white;
+      width: 6em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0.4em 0;
+    }
+
+    &--borderRide {
+      border: 4px solid white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 3em;
+      height: 3em;
+      margin: 0.4em 0;
+    }
+  }
+}
+
+.input {
+  &__title {
+    font-size: 1em;
+    color: $green;
+    font-weight: 800;
+  }
+
+  &__form {
+    border: 2px $green solid;
+    border-radius: 1em;
+    background-color: $green;
+    height: 8em;
+    border-radius: 1em;
+    position: relative;
+  }
+
+  &__arrows {
+    width: 100%;
+  }
+
+  &__input {
+    outline: none;
+    border: none;
+    width: 100%;
+    font-size: 2.5em;
+    font-weight: 700;
+    padding: 0.25em 1.25em;
+    border-radius: 0.35em;
+  }
+
+  &__currency {
+    position: absolute;
+    color: black;
+    z-index: 1;
+    top: -0.575em;
+    left: 0.25em;
+    font-size: 2.5em;
+    font-weight: 700;
+  }
+}

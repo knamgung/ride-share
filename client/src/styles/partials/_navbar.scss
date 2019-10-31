@@ -1,0 +1,32 @@
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  background-color: $green;
+  height: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 0.75em;
+  border-top-right-radius: 0.75em;
+  z-index: 99;
+  &__icon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+  }
+}
+
+.home,
+.user {
+  width: 2em;
+  height: 2em;
+  fill: white;
+}
+
+.car {
+  width: 2.25em;
+  height: 2.25em;
+  fill: white;
+}

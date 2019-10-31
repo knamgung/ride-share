@@ -1,0 +1,19 @@
+@import "./partials/fonts.scss";
+@import "./partials/color.scss";
+@import "./partials/navbar.scss";
+@import "./partials/passengers.scss";
+@import "./partials/carpool.scss";
+@import "./partials/passengerDetail.scss";
+@import "./partials/createpool.scss";
+
+*,
+body {
+  box-sizing: border-box;
+  font-family: "MarkPro";
+}
+
+.hello {
+  font-size: 2em;
+  font-family: "MarkPro";
+  font-weight: 700;
+}

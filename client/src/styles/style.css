@@ -1,0 +1,515 @@
+@font-face {
+  font-family: "MarkPro";
+  src: url("../assets/fonts/MarkProHairline.otf") format("opentype");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "MarkPro";
+  src: url("../assets/fonts/MarkPro.otf") format("opentype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "MarkPro";
+  src: url("../assets/fonts/MarkProMedium.otf") format("opentype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "MarkPro";
+  src: url("../assets/fonts/MarkProBold.otf") format("opentype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "MarkPro";
+  src: url("../assets/fonts/MarkProBlack.otf") format("opentype");
+  font-weight: 1000;
+}
+
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  background-color: #56d88a;
+  height: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top-left-radius: 0.75em;
+  border-top-right-radius: 0.75em;
+  z-index: 99;
+}
+
+.nav__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+}
+
+.home,
+.user {
+  width: 2em;
+  height: 2em;
+  fill: white;
+}
+
+.car {
+  width: 2.25em;
+  height: 2.25em;
+  fill: white;
+}
+
+.pass {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 1em;
+}
+
+.pass__each {
+  width: 43%;
+  height: 20em;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  border-radius: 1em;
+  position: relative;
+  margin: 1em;
+}
+
+.pass a {
+  -webkit-text-emphasis: none;
+          text-emphasis: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-decoration: none;
+}
+
+.pass__info {
+  background-color: #56d88a;
+  color: white;
+  border-radius: 1em;
+  height: 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 2em;
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+.pass__info--rides, .pass__info--amount {
+  margin: 0;
+}
+
+.pass__name {
+  color: white;
+  padding: 0 1em;
+  margin-bottom: 0.5em;
+  position: absolute;
+  bottom: 2em;
+  text-shadow: 2px 2px 16px rgba(0, 0, 0, 0.75);
+}
+
+.carpool {
+  margin: 0 2em;
+}
+
+.carpool a {
+  -webkit-text-emphasis: none;
+          text-emphasis: none;
+  text-decoration: none;
+}
+
+.carpool__each {
+  margin-top: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 17em;
+  width: 100%;
+  position: relative;
+}
+
+.carpool__route {
+  font-size: 0.5em;
+  font-weight: 1000;
+  border: 1px solid white;
+  padding: 0.25em;
+  text-align: center;
+  width: 5.5em;
+  margin: 0;
+}
+
+.carpool__city {
+  font-size: 1.5em;
+  margin: 0.15em 0;
+}
+
+.carpool__passenger {
+  margin: 0;
+  font-size: 0.75em;
+  font-style: italic;
+  margin-bottom: 8em;
+}
+
+.carpool__owed {
+  margin: 0;
+  font-size: 0.75em;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.carpool__info {
+  width: 10em;
+  border-radius: 2em;
+  background-color: #56d88a;
+  height: 17em;
+  padding: 1.25em;
+  color: white;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+
+.carpool__map {
+  width: 90%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  right: 0;
+}
+
+.carpool__map--content {
+  border-radius: 1em;
+  width: 100%;
+  height: 17em;
+}
+
+.passengerDetail {
+  margin: 2em;
+}
+
+.detail {
+  height: 15em;
+  background-color: #56d88a;
+  border-radius: 1em;
+  color: white;
+  border-radius: 1.5em;
+}
+
+.detail__photo {
+  height: 15em;
+  position: absolute;
+  width: 10em;
+  background-size: cover;
+  background-position: center;
+  border-radius: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 1em;
+}
+
+.detail__name {
+  margin: 0;
+  text-shadow: 2px 2px 16px rgba(0, 0, 0, 0.75);
+}
+
+.detail__main {
+  margin-left: 11em;
+  padding: 0.75em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.detail__subhead {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.detail__quant {
+  margin: 0.5em 0;
+  font-size: 1.2em;
+}
+
+.detail__quant--border {
+  border: 4px solid white;
+  width: 6em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0.4em 0;
+}
+
+.detail__quant--borderRide {
+  border: 4px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 3em;
+  height: 3em;
+  margin: 0.4em 0;
+}
+
+.input__title {
+  font-size: 1em;
+  color: #56d88a;
+  font-weight: 800;
+}
+
+.input__form {
+  border: 2px #56d88a solid;
+  border-radius: 1em;
+  background-color: #56d88a;
+  height: 8em;
+  border-radius: 1em;
+  position: relative;
+}
+
+.input__arrows {
+  width: 100%;
+}
+
+.input__input {
+  outline: none;
+  border: none;
+  width: 100%;
+  font-size: 2.5em;
+  font-weight: 700;
+  padding: 0.25em 1.25em;
+  border-radius: 0.35em;
+}
+
+.input__currency {
+  position: absolute;
+  color: black;
+  z-index: 1;
+  top: -0.575em;
+  left: 0.25em;
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.create__map--img {
+  width: 100%;
+  height: 20em;
+}
+
+.create__to {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 2em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.create__route {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  margin: 1em 0;
+}
+
+.create__route input {
+  border-radius: 0.5em;
+  background-color: #efefef;
+  height: 2.75em;
+  padding: 1em;
+  border: none;
+  font-size: 1.15em;
+  font-weight: 700;
+  margin: 0.15em;
+  outline: none;
+}
+
+.createMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  padding: 0 2em;
+}
+
+.createMain__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1em 0;
+}
+
+.createMain__sub {
+  width: 65%;
+}
+
+.createMain__loc {
+  margin: 0;
+}
+
+.createMain__head {
+  margin-bottom: 0.75em;
+  font-weight: 800;
+  color: #56d88a;
+  font-size: 0.75em;
+}
+
+.createMain__input {
+  width: 8em;
+  height: 4em;
+  font-size: 1.05em;
+  padding-left: 0.5em;
+  border: #56d88a 4px solid;
+  border-radius: 1em;
+  font-weight: 700;
+}
+
+.date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 2em;
+}
+
+.date__each {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 5em;
+  border-radius: 0.75em;
+  border: 0.25px solid white;
+  background-color: white;
+}
+
+.date__each:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: -webkit-grab;
+  cursor: grab;
+  background-color: #56d88a;
+}
+
+.date__each:hover h3 {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  color: white;
+}
+
+.date__each h3 {
+  color: #56d88a;
+}
+
+*,
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "MarkPro";
+}
+
+.hello {
+  font-size: 2em;
+  font-family: "MarkPro";
+  font-weight: 700;
+}
+/*# sourceMappingURL=style.css.map */
