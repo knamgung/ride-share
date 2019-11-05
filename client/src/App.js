@@ -8,21 +8,58 @@ import PassengerDetail from "./components/PassengerDetail.js";
 import CreatePool from "./components/CreatePool";
 
 export default class App extends Component {
+  state = {
+    rides: [
+      {
+        pickup: {
+          addr: "Toronto",
+          time: null
+        },
+        dropoff: {
+          addr: "Waterloo",
+          time: null
+        },
+        date: {
+          mon: false,
+          tue: false,
+          wed: false,
+          thur: false,
+          fri: false,
+          sat: false,
+          sun: false
+        },
+        money: 35.44,
+        id: 123,
+        passengers: 3
+      }
+    ]
+  };
+
+  addRide = data => {
+    let newRide = this.state.rides;
+    newRide.push(data);
+    this.setState({
+      newRide
+    });
+  };
   render() {
+    const { rides } = this.state;
     return (
       <div>
         <Switch>
           <Route
             path="/"
             render={() => {
-              return <Carpool></Carpool>;
+              return <Carpool rides={rides}></Carpool>;
             }}
             exact
           ></Route>
           <Route
-            path="/ride"
-            render={() => {
-              return <CreatePool></CreatePool>;
+            path="/add"
+            render={props => {
+              return (
+                <CreatePool {...props} addRide={this.addRide}></CreatePool>
+              );
             }}
           ></Route>
 

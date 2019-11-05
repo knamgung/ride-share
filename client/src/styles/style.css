@@ -187,6 +187,28 @@
   margin: 0.15em 0;
 }
 
+.carpool__add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 4em;
+  background-color: #56d88a;
+  border-radius: 0.5em;
+  color: white;
+  margin: 2em 0;
+}
+
+.carpool__add h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
 .carpool__passenger {
   margin: 0;
   font-size: 0.75em;
@@ -454,6 +476,21 @@
   font-weight: 700;
 }
 
+.createMain__done {
+  padding: 0 2em;
+  margin: 2em 0 7em 0;
+}
+
+.createMain__button {
+  width: 100%;
+  font-size: 1.5em;
+  height: 3em;
+  border-radius: 0.25em;
+  border: none;
+  background-color: #56d88a;
+  color: white;
+}
+
 .date {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -479,7 +516,6 @@
   height: 5em;
   border-radius: 0.75em;
   border: 0.25px solid white;
-  background-color: white;
 }
 
 .date__each:hover {
@@ -494,10 +530,6 @@
   -webkit-transition: 0.2s;
   transition: 0.2s;
   color: white;
-}
-
-.date__each h3 {
-  color: #56d88a;
 }
 
 *,
